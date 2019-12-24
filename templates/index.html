@@ -32,8 +32,15 @@
             .footer-text{
                 font-family: monospace;
                 font-size: 12px;
+                display: flex;
+                justify-content: center;
+                
             }
-            
+            .message{
+                border: solid 1px red;
+                text-align: center;
+            }
+            /* test comment */
         </style>
         
     </head>
@@ -47,7 +54,12 @@
         
         <footer>
             <div class="footer-text">
-                Note: Generates random number between 0 and 100 inclusive. 
+                <div class = "Note">
+                    Note:
+                </div>
+                <div class="message">
+                    Generates random number between 0 and 100 inclusive. 
+                </div>
             </div>
         </footer>
         <script>
