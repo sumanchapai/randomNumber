@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random Number</title>
+        <meta name = "viewport" content="width=device-width">
+        <style>
+           *{
+               padding: 0;
+               margin: 0;
+               box-sizing: border-box;
+           }
+           .number-container{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               background-color: black;
+
+           }
+            .number{
+                font-weight: bold;
+                color:white;
+                font-size: 8em;
+                font-family: monospace;
+            }  
+            footer{
+                background-color: black;
+                color: white;
+                padding: 10px;
+                display: flex;
+                justify-content: center;
+            }
+            .footer-text{
+                font-family: monospace;
+                font-size: 12px;
+            }
+            
+        </style>
+        
+    </head>
+    <!-- <body onload="colorAndHeight()"> -->
+    <body>
+        <div class="number-container" id = "numberContainer">
+            <div class="number">
+                {{ number }}
+            </div>
+        </div>
+        
+        <footer>
+            <div class="footer-text">
+                Note: Generates random number between 0 and 100 inclusive. 
+            </div>
+        </footer>
+        <script>
+            // get the screen height and set it as height of the div containing number
+            var height =  window.innerHeight;
+            var intheight = height - 32 ; 
+            var elem = document.getElementById("numberContainer");
+            elem.style.height = intheight + "px";
+            //convert float to int
+
+        </script>
+
+    </body>
+</html>
