@@ -41,6 +41,18 @@
             }
             /* test comment */
         </style>
+        <script>
+            // get the screen height and set it as height of the div containing number
+            window.addEventListener("DOMContentLoaded", getHeight);
+            window.addEventListener("resize", getHeight);
+            function getHeight(){
+                var height =  window.innerHeight;
+                var intheight = height - 32 ; 
+                var elem = document.getElementById("numberContainer");
+                elem.style.height = intheight + "px";
+                //convert float to int
+            };
+        </script>
         
     </head>
     <!-- <body onload="colorAndHeight()"> -->
@@ -61,15 +73,7 @@
                 </div>
             </div>
         </footer>
-        <script>
-            // get the screen height and set it as height of the div containing number
-            var height =  window.innerHeight;
-            var intheight = height - 32 ; 
-            var elem = document.getElementById("numberContainer");
-            elem.style.height = intheight + "px";
-            //convert float to int
-
-        </script>
+        
 
     </body>
 </html>
